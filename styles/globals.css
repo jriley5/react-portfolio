@@ -75,3 +75,22 @@ body {
   background: inherit;
   border-radius: inherit;
 }
+
+#video-animation {
+  background-color: red;
+}
+
+#section-intro {
+  /* background-image: url("https://media2.giphy.com/media/h0prjtKNRuMyPJXHrC/giphy.gif");
+  background-repeat: no-repeat, repeat;
+  background-size: cover; */
+}
+
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  max-height: 100vh;
+  max-width: 100vw;
+  transform: translate(-50%, -50%);
+}

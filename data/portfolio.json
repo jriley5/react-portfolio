@@ -1,38 +1,28 @@
 {
     "name": "Jack Riley",
-    "headerTaglineOne": "Hey! 👋",
+    "headerTaglineOne": "Hey 👋",
     "headerTaglineTwo": "I'm Jack Riley — ",
     "headerTaglineThree": "a producer and songwriter",
-    "headerTaglineFour": "based in NYC.",
+    "headerTaglineFour": "based in NYC / LA.",
     "showCursor": false,
     "showBlog": false,
     "darkMode": true,
     "showResume": false,
     "socials": [
         {
-            "id": "1",
-            "title": "Github",
-            "link": "https://github.com/chetanverma16"
-        },
-        {
             "id": "2",
             "title": "LinkedIn",
-            "link": "https://www.linkedin.com/in/chetanverma7/"
-        },
-        {
-            "id": "3",
-            "title": "Twitter",
-            "link": "https://twitter.com/realchetanverma"
+            "link": "https://www.linkedin.com/in/jack-riley-aa2ba3178/"
         },
         {
             "id": "4",
-            "title": "Blog",
-            "link": "https://blog.chetanverma.com/"
+            "title": "Instagram",
+            "link": "https://instagram.com/jackrileymusic"
         },
         {
             "id": "5",
             "title": "Email",
-            "link": "mailto:hello@chetanverma.com"
+            "link": "mailto:jackbriley@me.com"
         }
     ],
     "projects": [
@@ -119,7 +109,78 @@
             "artist": "Prettyboyworldwyde",
             "credits": ["production", "co-writing", "mix"],
             "spotifyURL": "https://open.spotify.com/track/07Fgz22fRztE8TGFX2myWX?si=01e8eae1832442e9"
+        },
+        {
+            "id": "13",
+            "title": "All We Ever Were",
+            "artist": "Chance Emerson",
+            "credits": ["production", "co-writing", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/6RkjVHHd8SBOPn3Tc0lpsu?si=c34ea2833fc54ff6"
+        },
+        {
+            "id": "14",
+            "title": "Nice",
+            "artist": "Prettyboyworldwyde",
+            "credits": ["production", "co-writing", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/3DwgJS4Y8DLpGq3phgj03Z?si=8344a402d76a42f7"
+        },
+        {
+            "id": "15",
+            "title": "Dizzy",
+            "artist": "aloe.401, Truvi",
+            "credits": ["co-production", "co-writing", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/7JK154zbkSM25zhCGCCbOF?si=77ecae1820f742fc"
+        },
+        {
+            "id": "17",
+            "title": "Cut & Paste Lover",
+            "artist": "Emma Rosenkranz",
+            "credits": ["production", "co-writing", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/2cDvTWw78bl3fqOOtryYkK?si=4cb110b07a4f4235"
+        },
+        {
+            "id": "18",
+            "title": "What Little Love",
+            "artist": "Emma Rosenkranz",
+            "credits": ["production", "co-writing", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/6OzGA4eKWDZIw0WCk5rh7C?si=401c7ccc70344593"
+        },
+        {
+            "id": "19",
+            "title": "Gone Without a Trace",
+            "artist": "Prettyboyworldwyde, Jaisarin", 
+            "credits": ["production", "co-writing", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/3vaFQfafngd42vxACzjaJd?si=11f7b1d56f644af3"
+        },
+        {
+            "id": "20",
+            "title": "Probably Naught",
+            "artist": "aloe.401, Chance Emerson", 
+            "credits": ["co-production", "co-writing", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/3ZqZUmoEvgGkW5PuRBHVLF?si=860ed50ddb724bff"
+        },
+        {
+            "id": "21",
+            "title": "Gloria Gracie",
+            "artist": "Chance Emerson", 
+            "credits": ["production", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/2rUVOXld07ECde697iotJR?si=1fa0a9140a084530"
+        },
+        {
+            "id": "22",
+            "title": "Next Season",
+            "artist": "Jaisarin", 
+            "credits": ["production", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/4fCsnMhj5m7J9FVOkiKVB0?si=06b562bf442644e0"
+        },
+        {
+            "id": "23",
+            "title": "All My Time",
+            "artist": "Prettyboyworldwyde", 
+            "credits": ["production", "co-writing", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/1kJZokU7gZkgWuxEz9CAet?si=0d57a7dff4754c2e"
         }
+
 
     ],
     "services": [

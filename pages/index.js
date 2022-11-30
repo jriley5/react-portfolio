@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
@@ -10,12 +10,26 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+// import {render} from 'react-dom';
+// import {VideoScroll} from 'react-video-scroll';
 
 // Local Data
 import data from "../data/portfolio.json";
 
+
+// thrash animation
+// const currentFrame = (index) => {
+//   let padding = "0";
+//   if (index >= 10) {
+//     padding = "";
+//   }
+
+//   return "../jack-thrash-frames/jack-thrash" + padding + index + ".jpg";
+// }
+
+
 export default function Home() {
-  // Ref
+  // Ref 
   const workRef = useRef();
   const aboutRef = useRef();
   const textOne = useRef();
@@ -23,6 +37,13 @@ export default function Home() {
   const textThree = useRef();
   const textFour = useRef();
 
+  // State
+  const [readMoreWorkCards, setReadMoreWorkCards] = useState(false);
+
+  let filteredWorkJSON = (readMoreWorkCards? data.projects : 
+    data.projects.slice(0,4));
+
+    
   // Handling Scroll
   const handleWorkScroll = () => {
     window.scrollTo({
@@ -48,8 +69,15 @@ export default function Home() {
     );
   }, []);
 
+  
+
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
+    <div className={`relative ${data.showCursor && "cursor-none"}`} id="section-intro">
+
+      <canvas>
+        hi
+      </canvas>
+
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
@@ -63,6 +91,7 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
+
         <div className="laptop:mt-20 mt-10">
           <div className="mt-5">
             <h1
@@ -85,19 +114,26 @@ export default function Home() {
             </h1>
             <h1
               ref={textFour}
-              className="text-3xl tablet:text-4xl laptop:text-4xl laptopl:text-4xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl tablet:text-3xl laptop:text-4xl laptopl:text-4xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineFour}
             </h1>
           </div>
-
           <Socials className="mt-2 laptop:mt-5" />
         </div>
+
+{/* 
+        <VideoScroll>
+
+        </VideoScroll> */}
+        
+        {/* <p>{currentFrame(0)}</p> */}
+
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+          <h1 className="text-2xl text-bold">Discography</h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {data.projects.map((project) => (
+            {filteredWorkJSON.map((project) => (
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
@@ -109,10 +145,13 @@ export default function Home() {
               />
             ))}
           </div>
+
+        <Button onClick={()=>setReadMoreWorkCards(!readMoreWorkCards)}>{(readMoreWorkCards? "show less" : "show more" )}</Button>
+
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
+        {/* <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
+          <h1 className="tablet:m-10 text-2xl text-bold">Experience</h1>
           <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard
@@ -122,7 +161,8 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
+        </div> */}
+
         {/* This button should not go into production */}
         {/* {process.env.NODE_ENV === "development" && (
           <div className="fixed bottom-5 right-5">
@@ -132,7 +172,7 @@ export default function Home() {
           </div>
         )} */}
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
+          <h1 className="tablet:m-10 text-2xl text-bold">About</h1>
           <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
             {data.aboutpara}
           </p>
