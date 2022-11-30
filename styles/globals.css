@@ -81,9 +81,10 @@ body {
 }
 
 #section-intro {
-  /* background-image: url("https://media2.giphy.com/media/h0prjtKNRuMyPJXHrC/giphy.gif");
-  background-repeat: no-repeat, repeat;
-  background-size: cover; */
+  background-image: url("https://i.imgur.com/eU6kJGE.jpg");
+  background-color: rgb(34, 34, 34);
+  /* background-repeat: repeat;  */
+  background-size: 100vw;
 }
 
 canvas {

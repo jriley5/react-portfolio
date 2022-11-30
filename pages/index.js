@@ -74,10 +74,6 @@ export default function Home() {
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`} id="section-intro">
 
-      <canvas>
-        hi
-      </canvas>
-
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
@@ -130,7 +126,7 @@ export default function Home() {
         {/* <p>{currentFrame(0)}</p> */}
 
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Discography</h1>
+          <h1 className="text-2xl text-bold">My Work</h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {filteredWorkJSON.map((project) => (
@@ -146,7 +142,10 @@ export default function Home() {
             ))}
           </div>
 
-        <Button onClick={()=>setReadMoreWorkCards(!readMoreWorkCards)}>{(readMoreWorkCards? "show less" : "show more" )}</Button>
+              <div className="flex justify-center">
+              <Button type={"primary"} onClick={()=>setReadMoreWorkCards(!readMoreWorkCards)}>{(readMoreWorkCards? "show less" : "show more" )}</Button>
+
+              </div>
 
         </div>
 

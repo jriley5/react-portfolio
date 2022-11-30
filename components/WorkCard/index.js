@@ -43,9 +43,13 @@ const WorkCard = ({ img, name, artist, credits, spotifyURL, onClick }) => {
       <h2 className="text-xl opacity-50">
         {artist ? artist : "Artist Name"}
       </h2> */}
-      <h2 className="mt-2 ml-5 text-xl opacity-50">
+      {/* <h2 className="mt-2 ml-5 text-xl opacity-50">
         {credits ? creditsString(credits) : "Credits"}
-      </h2>
+      </h2> */}
+
+      <div className="flex flex-row gap-3">
+        {credits.map(credit => <button className="cursor-auto hover:scale-105 duration-300 ease-out text-stone-200 bg-zinc-900 font-regular py-2 px-5 rounded">{credit}</button> )}
+      </div>
     </div>
   );
 };
