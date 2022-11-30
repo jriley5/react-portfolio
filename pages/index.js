@@ -10,6 +10,7 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+import Image from 'next/image'
 // import {render} from 'react-dom';
 // import {VideoScroll} from 'react-video-scroll';
 
