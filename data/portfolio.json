@@ -179,9 +179,14 @@
             "artist": "Prettyboyworldwyde", 
             "credits": ["production", "co-writing", "mix"],
             "spotifyURL": "https://open.spotify.com/track/1kJZokU7gZkgWuxEz9CAet?si=0d57a7dff4754c2e"
+        },
+        {
+            "id": "24",
+            "title": "You Come Back To me",
+            "artist": "Emma Rosenkranz", 
+            "credits": ["production", "co-writing", "mix"],
+            "spotifyURL": "https://open.spotify.com/track/4FWcDYP1f30hZOpTIIewPq?si=d5fa28a4231f4fc5"
         }
-
-
     ],
     "services": [
         {
@@ -205,7 +210,12 @@
             "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
         }
     ],
-    "aboutpara": "Hi! I'm Jack Riley, a senior at Brown University studying Music and Computer Science. I'm a music producer, audio engineer, songwriter, drummer and bassist from Los Angeles, and I focus on production in pop, folk, r&b, rap, and indie rock. My songs have been featured on 14+ Spotify editorial playlists, including New Music Friday and Fresh Finds, and have totaled over 3 million streams. I teach music and coding at Curious Cardinals. " ,
+    "aboutpara": [
+        "Hi! I'm Jack Riley, a senior at Brown University studying Music and Computer Science. I'm a music producer, audio engineer, songwriter, drummer and bassist from Los Angeles, and I focus on production in pop, folk, r&b, rap, and indie rock. ",
+        "My songs have been featured on 14+ Spotify editorial playlists, including New Music Friday and Fresh Finds, and have totaled over 3 million streams. I also teach music and coding at Curious Cardinals. ",
+        "whoops! nothing here yet",
+        "whoops! nothing here yet"
+     ] ,
     "resume": {
         "tagline": "👋  I'm a software engineer, product designer.",
         "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",

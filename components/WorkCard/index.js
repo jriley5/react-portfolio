@@ -14,29 +14,33 @@ const creditsString = (credits) => {
   return str;
 }
 
-const WorkCard = ({ img, name, artist, credits, spotifyURL, onClick }) => {
+const WorkCard = ({ img, name, artist, credits, spotifyURL, viewMore, onClick }) => {
 
   const spotifyURI = spotifyURL.substring(31);
   const embedLink = "https://open.spotify.com/embed/track/" + spotifyURI + "?utm_source=generator&theme=0";
+  const adaptiveHeight = viewMore? "80px" : "352px";
 
   return (
     <div
       className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link"
       onClick={onClick}
     >
-      <div
+      
+      <iframe className="mb-3"style={{"border-radius": "15px"}} src={embedLink} width="100%" height={adaptiveHeight} frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      
+      {/* <div
         className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto"
-        style={{ height: "360px" }}
+        style={{ height: adaptiveHeight }}
       >
+        </div> */}
         {/* <img
           alt={name}
           className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
           src={img}
         ></img> */}
 
-      <iframe style={{"border-radius": "15px"}} src={embedLink} width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-      </div>
+      
       {/* <h1 className="mt-5 text-3xl font-medium">
         {name ? name : "Project Name"}
       </h1>

@@ -40,10 +40,12 @@ export default function Home() {
 
   // State
   const [readMoreWorkCards, setReadMoreWorkCards] = useState(false);
+  const [readMoreAbout, setReadMoreAbout] = useState(false);
 
-  let filteredWorkJSON = (readMoreWorkCards? data.projects : 
-    data.projects.slice(0,4));
+  let filteredWorkJSON = (readMoreWorkCards? data.projects : data.projects.slice(0,4));
 
+
+  let filteredAboutParas = (readMoreAbout? data.aboutpara : [data.aboutpara[0], data.aboutpara[1]]);
     
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -138,6 +140,7 @@ export default function Home() {
                 artist={project.artist}
                 credits={project.credits}
                 spotifyURL={project.spotifyURL}
+                viewMore={readMoreWorkCards}
                 onClick={() => 0}//window.open(project.spotifyURL)}
               />
             ))}
@@ -145,7 +148,6 @@ export default function Home() {
 
               <div className="flex justify-center">
               <Button type={"primary"} onClick={()=>setReadMoreWorkCards(!readMoreWorkCards)}>{(readMoreWorkCards? "show less" : "show more" )}</Button>
-
               </div>
 
         </div>
@@ -173,8 +175,33 @@ export default function Home() {
         )} */}
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
           <h1 className="tablet:m-10 text-2xl text-bold">About</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
+
+          {filteredAboutParas.map(para => 
+            <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
+              {para}
+            </p>
+          )}
+
+          <Button type={"primary"} onClick={()=>setReadMoreAbout(!readMoreAbout)}>{(readMoreAbout? "read less" : "read more" )}</Button>
+
+          {/* <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
+            {filteredAboutParas["para-1"]}
+          </p>
+
+          <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
+            {data.aboutpara["para-2"]}
+          </p>
+
+          <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
+            {data.aboutpara["para-3"]}
+          </p>
+
+          <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
+            {data.aboutpara["para-4"]}
+          </p> */}
+
+          <p>
+
           </p>
         </div>
         <Footer />
