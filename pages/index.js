@@ -177,7 +177,7 @@ export default function Home() {
           <h1 className="tablet:m-10 text-2xl text-bold">About</h1>
 
           {filteredAboutParas.map(para => 
-            <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
+            <p key={para.key} className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
               {para}
             </p>
           )}
