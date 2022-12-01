@@ -52,7 +52,7 @@ const WorkCard = ({ img, name, artist, credits, spotifyURL, viewMore, onClick })
       </h2> */}
 
       <div className="flex flex-row gap-3">
-        {credits.map(credit => <button key={credit.key} className="cursor-auto hover:scale-105 duration-300 ease-out text-stone-200 bg-zinc-900 font-regular py-2 px-5 rounded">{credit}</button> )}
+        {credits.map(credit => <button key={credit.key} className="cursor-auto hover:scale-105 duration-300 ease-out text-white bg-stone-800 font-regular py-2 px-5 rounded">{credit}</button> )}
       </div>
     </div>
   );
