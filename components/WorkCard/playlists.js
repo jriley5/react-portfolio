@@ -12,7 +12,7 @@ const Playlists = ({playlistURLs}) => {
             
             return (embedLinks.map(embedLink => 
                 <iframe key={embedLink.key}className="rounded-lg mb-5"src={embedLink} 
-                width="100%" height="80" frameBorder="0" allowfullscreen="" 
+                width="100%" height="80" frameBorder="0" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"></iframe>))           
         }
