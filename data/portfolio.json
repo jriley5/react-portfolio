@@ -5,7 +5,7 @@
     "headerTaglineThree": "a producer and songwriter",
     "headerTaglineFour": "based in NYC / LA.",
     "showCursor": false,
-    "showBlog": false,
+    "showBlog": true,
     "darkMode": true,
     "showResume": false,
     "socials": [
@@ -30,161 +30,264 @@
             "id": "1",
             "title": "Game Theory",
             "artist": "Chance Emerson",
-            "credits": ["production", "mix"],
-            "spotifyURL": "https://open.spotify.com/track/4GEmZTtTXA0bZahY7rA05h?si=33a5c700c3434a8a"
+            "credits": [
+                "production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/4GEmZTtTXA0bZahY7rA05h?si=33a5c700c3434a8a",
+            "playlistURLs": []
         },
         {
             "id": "2",
             "title": "House We Share",
             "artist": "Chance Emerson",
-            "credits": ["production", "mix"],
-            "spotifyURL": "https://open.spotify.com/track/7jrmivOL6T6uIv4Fd0eU8o?si=1a0ed99dda4b4c6a"
+            "credits": [
+                "production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/7jrmivOL6T6uIv4Fd0eU8o?si=1a0ed99dda4b4c6a",
+            "playlistURLs": [
+                "https://open.spotify.com/playlist/37i9dQZF1DX4xuWVBs4FgJ?si=028d37c300354512",
+                "https://open.spotify.com/playlist/37i9dQZF1DXdbTERrLjYkP?si=8157bc34a8114b3c",
+                "https://open.spotify.com/playlist/37i9dQZF1DX6tTW0xDxScH"
+            ]
         },
         {
             "id": "3",
             "title": "Lullabies",
             "artist": "Prettyboyworldwyde",
-            "credits": ["production", "mix"],
-            "spotifyURL": "https://open.spotify.com/track/7fvAIIqAH1TzC5ohdv0w2m?si=7b51268db88a4260"
+            "credits": [
+                "production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/7fvAIIqAH1TzC5ohdv0w2m?si=7b51268db88a4260",
+            "playlistURLs": [
+                "https://open.spotify.com/playlist/37i9dQZF1DX4JAvHpjipBk?si=55487b8a748a4a84",
+                "https://open.spotify.com/playlist/37i9dQZF1DWWqNV5cS50j6?si=7824baa62d4146d3"
+                  
+            ]
         },
         {
             "id": "4",
             "title": "Lavender",
             "artist": "aloe.401",
-            "credits": ["co-production", "mix"],
-            "spotifyURL": "https://open.spotify.com/track/2zFmInJW8nn2O8hJRpgt0O?si=40c3b7d394f24eff"
+            "credits": [
+                "co-production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/2zFmInJW8nn2O8hJRpgt0O?si=40c3b7d394f24eff",
+            "playlistURLs": [
+                "https://open.spotify.com/playlist/37i9dQZF1DX1aTyQ3Z9nTc",
+                "https://open.spotify.com/playlist/37i9dQZF1DXbTop77dnX35?si=519d15ffe3414855"
+            ]
         },
         {
             "id": "5",
             "title": "Best Behavior",
             "artist": "aloe.401",
-            "credits": ["co-production", "co-writing", "mix"],
+            "credits": [
+                "co-production",
+                "co-writing",
+                "mix"
+            ],
+            "playlistURLs": [],
             "spotifyURL": "https://open.spotify.com/track/0znz0jwexdmfuuIhVjsy4f?si=43f24c3687bb4cda"
         },
         {
             "id": "6",
             "title": "Gimme Love",
             "artist": "aloe.401",
-            "credits": ["co-production", "co-writing", "mix"],
+            "credits": [
+                "co-production",
+                "co-writing",
+                "mix"
+            ],
+            "playlistURLs": [],
             "spotifyURL": "https://open.spotify.com/track/32MJWgGagVzCGmXC85jzWD?si=eedbeb3e9a4b4b35"
         },
         {
             "id": "7",
             "title": "miss u on my phone",
             "artist": "Luke Markinson",
-            "credits": ["production", "mix"],
+            "credits": [
+                "production",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/6IARWJwhw6k1TM1V5LcfqO?si=465e6821e96d458b"
         },
         {
             "id": "8",
             "title": "Unimpressed",
             "artist": "Prettyboyworldwyde",
-            "credits": ["production", "co-writing", "mix"],
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
+            "playlistURLs": [],
             "spotifyURL": "https://open.spotify.com/track/1Hx0E0KVi3yRXzXU93G40z?si=2fc3c505a8284fcb"
         },
         {
             "id": "9",
             "title": "St. Someone",
             "artist": "Chance Emerson",
-            "credits": ["production", "mix"],
+            "credits": [
+                "production",
+                "mix"
+            ],
+            "playlistURLs": [],
             "spotifyURL": "https://open.spotify.com/track/151SVgVxyrYa60PaqecHut?si=da5f1693805e41d9"
         },
         {
             "id": "10",
             "title": "Can We Go?",
             "artist": "aloe.401",
-            "credits": ["co-production", "co-writing", "mix"],
+            "credits": [
+                "co-production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/2J0LpxQFYosA0oqFbmmZsp?si=51d36e4dec3d4306"
         },
         {
             "id": "11",
             "title": "Still Mine",
             "artist": "Prettyboyworldwyde",
-            "credits": ["production", "co-writing", "mix"],
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/2aBQvIPZcurOCeQG6WCWUH?si=31c0fbcb02184818"
         },
         {
             "id": "12",
             "title": "Know You're Different",
             "artist": "Prettyboyworldwyde",
-            "credits": ["production", "co-writing", "mix"],
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/07Fgz22fRztE8TGFX2myWX?si=01e8eae1832442e9"
         },
         {
             "id": "13",
             "title": "All We Ever Were",
             "artist": "Chance Emerson",
-            "credits": ["production", "co-writing", "mix"],
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/6RkjVHHd8SBOPn3Tc0lpsu?si=c34ea2833fc54ff6"
         },
         {
             "id": "14",
             "title": "Nice",
             "artist": "Prettyboyworldwyde",
-            "credits": ["production", "co-writing", "mix"],
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/3DwgJS4Y8DLpGq3phgj03Z?si=8344a402d76a42f7"
         },
         {
             "id": "15",
             "title": "Dizzy",
             "artist": "aloe.401, Truvi",
-            "credits": ["co-production", "co-writing", "mix"],
+            "credits": [
+                "co-production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/7JK154zbkSM25zhCGCCbOF?si=77ecae1820f742fc"
         },
         {
             "id": "17",
             "title": "Cut & Paste Lover",
             "artist": "Emma Rosenkranz",
-            "credits": ["production", "co-writing", "mix"],
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/2cDvTWw78bl3fqOOtryYkK?si=4cb110b07a4f4235"
         },
         {
             "id": "18",
             "title": "What Little Love",
             "artist": "Emma Rosenkranz",
-            "credits": ["production", "co-writing", "mix"],
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/6OzGA4eKWDZIw0WCk5rh7C?si=401c7ccc70344593"
         },
         {
             "id": "19",
             "title": "Gone Without a Trace",
-            "artist": "Prettyboyworldwyde, Jaisarin", 
-            "credits": ["production", "co-writing", "mix"],
+            "artist": "Prettyboyworldwyde, Jaisarin",
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/3vaFQfafngd42vxACzjaJd?si=11f7b1d56f644af3"
         },
         {
             "id": "20",
             "title": "Probably Naught",
-            "artist": "aloe.401, Chance Emerson", 
-            "credits": ["co-production", "co-writing", "mix"],
+            "artist": "aloe.401, Chance Emerson",
+            "credits": [
+                "co-production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/3ZqZUmoEvgGkW5PuRBHVLF?si=860ed50ddb724bff"
         },
         {
             "id": "21",
             "title": "Gloria Gracie",
-            "artist": "Chance Emerson", 
-            "credits": ["production", "mix"],
+            "artist": "Chance Emerson",
+            "credits": [
+                "production",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/2rUVOXld07ECde697iotJR?si=1fa0a9140a084530"
         },
         {
             "id": "22",
             "title": "Next Season",
-            "artist": "Jaisarin", 
-            "credits": ["production", "mix"],
+            "artist": "Jaisarin",
+            "credits": [
+                "production",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/4fCsnMhj5m7J9FVOkiKVB0?si=06b562bf442644e0"
         },
         {
             "id": "23",
             "title": "All My Time",
-            "artist": "Prettyboyworldwyde", 
-            "credits": ["production", "co-writing", "mix"],
+            "artist": "Prettyboyworldwyde",
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/1kJZokU7gZkgWuxEz9CAet?si=0d57a7dff4754c2e"
         },
         {
             "id": "24",
             "title": "You Come Back To me",
-            "artist": "Emma Rosenkranz", 
-            "credits": ["production", "co-writing", "mix"],
+            "artist": "Emma Rosenkranz",
+            "credits": [
+                "production",
+                "co-writing",
+                "mix"
+            ],
             "spotifyURL": "https://open.spotify.com/track/4FWcDYP1f30hZOpTIIewPq?si=d5fa28a4231f4fc5"
         }
     ],
@@ -213,9 +316,9 @@
     "aboutpara": [
         "Hi! I'm Jack Riley, a senior at Brown University studying Music and Computer Science. I'm a music producer, audio engineer, songwriter, drummer and bassist from Los Angeles, and I focus on production in pop, folk, r&b, rap, and indie rock. ",
         "My songs have been featured on 14+ Spotify editorial playlists, including New Music Friday and Fresh Finds, and have totaled over 3 million streams. I also teach music and coding at Curious Cardinals. ",
-        "whoops! nothing here yet",
-        "whoops! nothing here yet"
-     ] ,
+        "",
+        ""
+    ],
     "resume": {
         "tagline": "👋  I'm a software engineer, product designer.",
         "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",

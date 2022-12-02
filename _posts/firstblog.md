@@ -1,7 +1,7 @@
 ---
 date: '2022-07-15T11:50:54.000Z'
-title: Amazing Blog
-tagline: This is a Tagline If you want to add.
+title:  Best Behavior by aloe.401 - session breadown
+tagline: How we made the tune...
 preview: >-
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

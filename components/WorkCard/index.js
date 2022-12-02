@@ -1,24 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import Playlists from './playlists.js'
 
-const creditsString = (credits) => {
-  var str = "";
-
-  for (let i = 0; i < credits.length; i++) {
-    if (i != credits.length - 1) {
-      str += credits[i] + ", ";
-    } else {
-      str += credits[i];
-    }
-  }
-
-  return str;
-}
-
-const WorkCard = ({ img, name, artist, credits, spotifyURL, viewMore, onClick }) => {
+const WorkCard = ({ img, name, artist, credits, spotifyURL, viewMore, playlistURLs, onClick }) => {
 
   const spotifyURI = spotifyURL.substring(31);
   const embedLink = "https://open.spotify.com/embed/track/" + spotifyURI + "?utm_source=generator&theme=0";
   const adaptiveHeight = viewMore? "80px" : "352px";
+  const [showPlaylists, setShowPlaylists] = useState(false);
+
+  const showPlaylistButton = () => {
+    if (playlistURLs && playlistURLs.length > 0) {
+      return <button className="ml-auto text-med hover:scale-105 duration-500 ease-out text-white bg-stone-700 hover:bg-stone-600 font-regular py-2 px-5 rounded-2xl"
+      onClick={() => setShowPlaylists(!showPlaylists)}>
+        {showPlaylists? "hide playlists" : ("show playlists (" + playlistURLs.length + ")") } 
+      </button>
+    } 
+    return 
+  }
+
+  const playlists = () => {
+    if (showPlaylists) {
+      return (<Playlists playlistURLs={playlistURLs}/>);
+    }
+    return 
+  }
 
   return (
     <div
@@ -26,7 +31,7 @@ const WorkCard = ({ img, name, artist, credits, spotifyURL, viewMore, onClick })
       onClick={onClick}
     >
       
-      <iframe className="mb-3"style={{"border-radius": "15px"}} src={embedLink} width="100%" height={adaptiveHeight} frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe className="mb-5 rounded-2xl" style={{}} src={embedLink} width="100%" height={adaptiveHeight} frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       
       {/* <div
         className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto"
@@ -38,7 +43,6 @@ const WorkCard = ({ img, name, artist, credits, spotifyURL, viewMore, onClick })
           className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
           src={img}
         ></img> */}
-
 
       
       {/* <h1 className="mt-5 text-3xl font-medium">
@@ -52,8 +56,12 @@ const WorkCard = ({ img, name, artist, credits, spotifyURL, viewMore, onClick })
       </h2> */}
 
       <div className="flex flex-row gap-3">
-        {credits.map(credit => <button key={credit.key} className="cursor-auto hover:scale-105 duration-300 ease-out text-white bg-stone-800 font-regular py-2 px-5 rounded">{credit}</button> )}
+        {credits.map(credit => <button key={credit.key} className="cursor-auto text-med hover:scale-105 duration-500 ease-out text-white bg-stone-800 hover:bg-stone-600 font-regular py-2 px-5 rounded-2xl">{credit}</button> )}
+        {showPlaylistButton()}
       </div>
+
+      {playlists()}
+
     </div>
   );
 };

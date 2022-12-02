@@ -43,8 +43,6 @@ export default function Home() {
   const [readMoreAbout, setReadMoreAbout] = useState(false);
 
   let filteredWorkJSON = (readMoreWorkCards? data.projects : data.projects.slice(0,4));
-
-
   let filteredAboutParas = (readMoreAbout? data.aboutpara : [data.aboutpara[0], data.aboutpara[1]]);
     
   // Handling Scroll
@@ -75,7 +73,7 @@ export default function Home() {
   
 
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`} id="section-intro">
+    <div className={`relative ${data.showCursor && "cursor-none"}`} id="entire-page">
 
       {data.showCursor && <Cursor />}
       <Head>
@@ -91,7 +89,7 @@ export default function Home() {
           handleAboutScroll={handleAboutScroll}
         />
 
-        <div className="laptop:mt-20 mt-10">
+        <div className="laptop:mt-20 mt-10" id="section-intro">
           <div className="mt-5">
             <h1
               ref={textOne}
@@ -128,10 +126,10 @@ export default function Home() {
         
         {/* <p>{currentFrame(0)}</p> */}
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
+        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" id="section-work" ref={workRef}>
           <h1 className="text-2xl text-bold">My Work</h1>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+          <div className="mt-5 mb-10 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {filteredWorkJSON.map((project) => (
               <WorkCard
                 key={project.id}
@@ -141,13 +139,19 @@ export default function Home() {
                 credits={project.credits}
                 spotifyURL={project.spotifyURL}
                 viewMore={readMoreWorkCards}
+                playlistURLs={project.playlistURLs}
                 onClick={() => 0}//window.open(project.spotifyURL)}
               />
             ))}
           </div>
 
-              <div className="flex justify-center">
-              <Button type={"primary"} onClick={()=>setReadMoreWorkCards(!readMoreWorkCards)}>{(readMoreWorkCards? "show less" : "show more" )}</Button>
+              <div className="flex justify-center ">
+              <Button type={"primary"} onClick={()=>{
+                setReadMoreWorkCards(!readMoreWorkCards);
+                workRef.current.scrollIntoView();
+                }}>
+                  {(readMoreWorkCards? "show less" : "show more" )}
+              </Button>
               </div>
 
         </div>
@@ -177,32 +181,12 @@ export default function Home() {
           <h1 className="tablet:m-10 text-2xl text-bold">About</h1>
 
           {filteredAboutParas.map(para => 
-            <p key={para.key} className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
+            <p key={para.key} className="tablet:m-10 mt-2 text-3xl  w-full laptop:w-3/5">
               {para}
             </p>
           )}
 
-          <Button type={"primary"} onClick={()=>setReadMoreAbout(!readMoreAbout)}>{(readMoreAbout? "read less" : "read more" )}</Button>
-
-          {/* <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
-            {filteredAboutParas["para-1"]}
-          </p>
-
-          <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
-            {data.aboutpara["para-2"]}
-          </p>
-
-          <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
-            {data.aboutpara["para-3"]}
-          </p>
-
-          <p className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
-            {data.aboutpara["para-4"]}
-          </p> */}
-
-          <p>
-
-          </p>
+          {/* <Button type={"primary"} onClick={()=>setReadMoreAbout(!readMoreAbout)}>{(readMoreAbout? "read less" : "read more" )}</Button> */}
         </div>
         <Footer />
       </div>
