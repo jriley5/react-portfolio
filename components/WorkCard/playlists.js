@@ -11,7 +11,7 @@ const Playlists = ({playlistURLs}) => {
             let embedLinks = playlistIDs.map(playlistID => "https://open.spotify.com/embed/playlist/" + playlistID + "?utm_source=generator&theme=0");
             
             return (embedLinks.map(embedLink => 
-                <iframe className="rounded-lg mb-5"src={embedLink} 
+                <iframe key={embedLink.key}className="rounded-lg mb-5"src={embedLink} 
                 width="100%" height="80" frameBorder="0" allowfullscreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"></iframe>))           
