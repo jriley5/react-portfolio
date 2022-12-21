@@ -70,26 +70,30 @@ export default function Home() {
     );
   }, []);
 
-  
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`} id="entire-page">
-
       {data.showCursor && <Cursor />}
+
+      <div>
       <Head>
         <title>{data.name}</title>
       </Head>
+      </div>
+      
 
-      <div className="gradient-circle"></div>
-      <div className="gradient-circle-bottom"></div>
+      {/* <div className="gradient-circle"></div>
+      <div className="gradient-circle-bottom"></div> */}
 
-      <div className="container mx-auto mb-10">
-        <Header
+      <div className="container mx-auto">
+
+        <Header 
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
 
-        <div className="laptop:mt-20 mt-10" id="section-intro">
+
+        <div className="laptop:mt-40 mt-10" id="section-intro">
           <div className="mt-5">
             <h1
               ref={textOne}
