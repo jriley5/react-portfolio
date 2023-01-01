@@ -10,7 +10,7 @@ const WorkCard = ({ img, name, artist, credits, spotifyURL, viewMore, playlistUR
 
   const showPlaylistButton = () => {
     if (playlistURLs && playlistURLs.length > 0) {
-      return <button className="ml-auto text-med hover:scale-105 duration-500 ease-out text-white bg-stone-700 hover:bg-stone-600 font-regular py-2 px-5 rounded-2xl"
+      return <button className="ml-auto text-med hover:scale-105 duration-500 ease-out text-white bg-stone-700 hover:bg-stone-600 font-regular py-2 px-5 rounded-lg"
       onClick={() => setShowPlaylists(!showPlaylists)}>
         {showPlaylists? "hide playlists" : ("show playlists (" + playlistURLs.length + ")") } 
       </button>
@@ -56,7 +56,7 @@ const WorkCard = ({ img, name, artist, credits, spotifyURL, viewMore, playlistUR
       </h2> */}
 
       <div className="flex flex-row gap-3">
-        {credits.map(credit => <button key={credit.key} className="cursor-auto text-med hover:scale-105 duration-500 ease-out text-white bg-stone-800 hover:bg-stone-600 font-regular py-2 px-5 rounded-2xl">{credit}</button> )}
+        {credits.map(credit => <button key={credit.key} className="cursor-auto text-med hover:scale-105 duration-500 ease-out text-white bg-stone-800 hover:bg-stone-700 font-regular py-2 px-5 rounded-lg">{credit}</button> )}
         {showPlaylistButton()}
       </div>
 

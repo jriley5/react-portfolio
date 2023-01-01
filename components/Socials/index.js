@@ -3,14 +3,35 @@ import Button from "../Button";
 
 import yourData from "../../data/portfolio.json";
 
+import InstaIcon from './/insta.svg'
+
+
 const Socials = ({ className }) => {
+
+  // let socialsIcons = {
+  //   "Instagram" : {InstaIcon},
+  //   "LinkedIn" : {LinkedInIcon}
+  // }
+
   return (
+
+    
     <div className={`${className} flex flex-wrap mob:flex-nowrap link`}>
-      {yourData.socials.map((social, index) => (
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+      <a href="https://instagram.com/jackrileymusic" target="_blank" class="fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/jack-riley-aa2ba3178/"  target="_blank" class="fa fa-linkedin"></a>
+
+      {/* {yourData.socials.map((social, index) => (
+        <div>
         <Button key={index} onClick={() => window.open(social.link)}>
           {social.title}
+          
         </Button>
-      ))}
+        <img src={InstaIcon} alt="image" />
+        </div>
+        
+      ))} */}
     </div>
   );
 };

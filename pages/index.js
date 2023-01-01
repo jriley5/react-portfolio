@@ -11,6 +11,8 @@ import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
 import Image from 'next/image'
+
+
 // import {render} from 'react-dom';
 // import {VideoScroll} from 'react-video-scroll';
 
@@ -33,6 +35,7 @@ export default function Home() {
   // Ref 
   const workRef = useRef();
   const aboutRef = useRef();
+  const contactRef = useRef();
   const textOne = useRef();
   const textTwo = useRef();
   const textThree = useRef();
@@ -43,7 +46,9 @@ export default function Home() {
   const [readMoreAbout, setReadMoreAbout] = useState(false);
 
   let filteredWorkJSON = (readMoreWorkCards? data.projects : data.projects.slice(0,4));
-  let filteredAboutParas = (readMoreAbout? data.aboutpara : [data.aboutpara[0], data.aboutpara[1]]);
+  let filteredAboutParas = (readMoreAbout? data.aboutpara : [data.about.aboutpara[0], data.about.aboutpara[1]]);
+  let aboutParasStyle = "tablet:m-10 mt-2 text-lg text-stone-300	";
+  let aboutBullets = data.about.bullets;
     
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -57,6 +62,14 @@ export default function Home() {
   const handleAboutScroll = () => {
     window.scrollTo({
       top: aboutRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleContactScroll = () => {
+    window.scrollTo({
+      top: contactRef.current.offsetTop,
       left: 0,
       behavior: "smooth",
     });
@@ -90,14 +103,16 @@ export default function Home() {
         <Header 
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
+          handleContactScroll={handleContactScroll}
         />
 
-
         <div className="laptop:mt-40 mt-10" id="section-intro">
-          <div className="mt-5">
+          <div id="intro-flex">
+            <div id="intro-text">
+            <div className="mt-5">
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
             >
               {data.headerTaglineOne}
             </h1>
@@ -115,23 +130,25 @@ export default function Home() {
             </h1>
             <h1
               ref={textFour}
-              className="text-3xl tablet:text-3xl laptop:text-4xl laptopl:text-4xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl tablet:text-3xl laptop:text-4xl laptopl:text-4xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5 mb-9"
             >
               {data.headerTaglineFour}
             </h1>
+            <Socials className="" />
           </div>
-          <Socials className="mt-2 laptop:mt-5" />
+          </div>
+
+          
+          <img id="intro-prof-pic" src="https://i.imgur.com/vWM6rjk.jpg" alt="thrash" />
+          </div>
+          
+          
         </div>
 
-{/* 
-        <VideoScroll>
 
-        </VideoScroll> */}
-        
-        {/* <p>{currentFrame(0)}</p> */}
 
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" id="section-work" ref={workRef}>
-          <h1 className="text-2xl text-bold">My Work</h1>
+          <h1 className="text-3xl text-bold">My Work</h1>
 
           <div className="mt-5 mb-10 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {filteredWorkJSON.map((project) => (
@@ -160,18 +177,7 @@ export default function Home() {
 
         </div>
 
-        {/* <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Experience</h1>
-          <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
-            {data.services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                name={service.title}
-                description={service.description}
-              />
-            ))}
-          </div>
-        </div> */}
+
 
         {/* This button should not go into production */}
         {/* {process.env.NODE_ENV === "development" && (
@@ -181,18 +187,102 @@ export default function Home() {
             </Link>
           </div>
         )} */}
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About</h1>
 
+        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
+          <h1 className="tablet:m-10 text-5xl text-bold">About Me</h1>
+          
+          <div id="about-paras">
+            <div className="about-column">
+            <p className={aboutParasStyle}>
+            Hi! I'm Jack Riley, a senior at Brown University studying Music and Computer Science.  
+            I'm a music producer, audio engineer, songwriter, drummer and bassist from Los Angeles, 
+            and I focus on production in pop, folk, r&b, rap, and indie rock.
+          </p>
+
+          <p className={aboutParasStyle}>
+          Here's what I've been up to in the past year:
+          </p>
+
+          <ul className="list-disc" style={{"marginLeft" : "50px"}}>
+            {aboutBullets.map(bullet => 
+              <li className="text-med mb-1 text-stone-300">{bullet}</li>)}
+          </ul>
+
+          <p className={aboutParasStyle}>
+          In 2022, I released FLORA, a joint project with fellow Brown classmate 
+          Luc Espinosa that features an assortment of vocalists and writers, 
+          including DAP The Contract, Chance Emerson, Lauren Juzang, Truvi, 
+          Prettyboyworldwyde,  Jackson Jones, and Gus Benson. FLORA has collected 
+          over 850k streams and been featured on 7+ Spotify editorial playlists 
+          as of December 2022. ​
+
+          </p>
+
+          <p className={aboutParasStyle}>
+          In 2021, "Lullabies" by Prettyboyworldwyde, a song I produced and mixed, 
+          was featured on Spotify's "New Music Friday" and "anti pop" playlists, now 
+          topping 426k streams from a previous listener base of under 10,000. Another 
+          song of ours,"Know You're Different," was also featured as the first track of 
+          over 50 others on Spotify's "Fresh Finds" editorial playlist. "Unimpressed," 
+          another PBW release, was featured on "anti pop" as well and now holds near 230k streams. 
+          </p>
+          </div>
+
+          <div className="about-column">
+            <p className={aboutParasStyle}>
+            At Brown, I'm a co-founder of the Brown Organization of Producers and Songwriters (BOPS), 
+            an executive board member for Tunes for Change, a Brown organization that hosts charitable 
+            benefit concerts, and the President of the Brown Music Cooperative, which organizes band 
+            rehearsal spaces on campus. In 2021, I was a recipient of the Brown Department of 
+            Music Margery MacColl Award for outstanding musicianship. 
+            </p>
+
+            <p className={aboutParasStyle}>
+            In summer 2021, I mixed a classical/jazz fusion album written by Ben Beckman, a composer 
+            who has had pieces played by the LA Philharmonic and the National Youth Orchestra of the 
+            United States of America on the BBC Proms. "VOYAGE" released in October 2021.
+            </p>
+
+            <p className={aboutParasStyle}>
+            I also love to teach — I designed and co-taught a series of remote music production 
+            workshops for high schoolers at Curious Cardinals and REACH Academy with Chance Emerson 
+            throughout summer 2021. I currently work at Curious Cardinals as a music production and 
+            coding instructor, teaching 7 students weekly. 
+            </p>
+
+            <p className={aboutParasStyle}>
+            I'm available for more projects! Feel free to message me on Instagram or email me at <a href="mailto:jackbriley@me.com"><u>jackbriley@me.com</u>.</a>
+            </p>
+            </div>
+          </div>
+
+
+          <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
+          <h1 className="tablet:m-10 text-4xl text-bold">Session Walkthroughs</h1>
+          <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
+            {data.services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                name={service.title}
+                description={service.description}
+                link={service.link}
+              />
+            ))}
+          </div>
+        </div>
+          
+          
+
+{/* 
           {filteredAboutParas.map(para => 
-            <p key={para.key} className="tablet:m-10 mt-2 text-3xl  w-full laptop:w-3/5">
+            <p key={para.key} className="tablet:m-10 mt-2 text-xl  w-full laptop:w-3/5">
               {para}
             </p>
-          )}
+          )} */}
 
           {/* <Button type={"primary"} onClick={()=>setReadMoreAbout(!readMoreAbout)}>{(readMoreAbout? "read less" : "read more" )}</Button> */}
         </div>
-        <Footer />
+        <Footer ref={contactRef}/>
       </div>
     </div>
   );
