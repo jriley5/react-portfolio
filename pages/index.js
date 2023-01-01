@@ -139,7 +139,7 @@ export default function Home() {
           </div>
 
           
-          <img id="intro-prof-pic" src="https://i.imgur.com/vWM6rjk.jpg" alt="thrash" />
+          <Image id="intro-prof-pic" src="https://i.imgur.com/vWM6rjk.jpg" alt="thrash" />
           </div>
           
           
