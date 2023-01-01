@@ -205,7 +205,7 @@ export default function Home() {
 
           <ul className="list-disc" style={{"marginLeft" : "50px"}}>
             {aboutBullets.map(bullet => 
-              <li className="text-med mb-1 text-stone-300">{bullet}</li>)}
+              <li key={bullet} className="text-med mb-1 text-stone-300">{bullet}</li>)}
           </ul>
 
           <p className={aboutParasStyle}>
@@ -262,7 +262,7 @@ export default function Home() {
           <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard
-                key={index}
+                key={service.id}
                 name={service.title}
                 description={service.description}
                 link={service.link}
@@ -282,7 +282,7 @@ export default function Home() {
 
           {/* <Button type={"primary"} onClick={()=>setReadMoreAbout(!readMoreAbout)}>{(readMoreAbout? "read less" : "read more" )}</Button> */}
         </div>
-        <Footer ref={contactRef}/>
+        <Footer refs={contactRef}/>
       </div>
     </div>
   );
