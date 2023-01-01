@@ -15,7 +15,7 @@ const ServiceCard = ({ name, description, link }) => {
       } hover:scale-105 link`}
     >
 
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noreferrer">
 
       <h1 className="text-3xl">{name ? name : "Heading"}</h1>
       <p className="mt-5 opacity-40 text-xl">

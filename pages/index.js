@@ -191,7 +191,7 @@ export default function Home() {
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
           <h1 className="tablet:m-10 text-5xl text-bold">About Me</h1>
           
-          <div id="about-paras">
+          {/* <div id="about-paras">
             <div className="about-column">
             <p className={aboutParasStyle}>
             Hi! I'm Jack Riley, a senior at Brown University studying Music and Computer Science.  
@@ -254,7 +254,7 @@ export default function Home() {
             I'm available for more projects! Feel free to message me on Instagram or email me at <a href="mailto:jackbriley@me.com"><u>jackbriley@me.com</u>.</a>
             </p>
             </div>
-          </div>
+          </div> */}
 
 
           <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
