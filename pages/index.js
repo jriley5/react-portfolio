@@ -196,13 +196,13 @@ export default function Home() {
           <div id="about-paras">
             <div className="about-column">
             <p className={aboutParasStyle}>
-            Hi! I&aposm Jack Riley, a senior at Brown University studying Music and Computer Science.  
-            I&aposm a music producer, audio engineer, songwriter, drummer and bassist from Los Angeles, 
+            Hi! I&apos;m Jack Riley, a senior at Brown University studying Music and Computer Science.  
+            I&apos;m a music producer, audio engineer, songwriter, drummer and bassist from Los Angeles, 
             and I focus on production in pop, folk, r&b, rap, and indie rock.
           </p>
 
           <p className={aboutParasStyle}>
-          Here&aposs what I&aposve been up to in the past year:
+          Here&apos;s what I&apos;ve been up to in the past year:
           </p>
 
           <ul className="list-disc" style={{"marginLeft" : "50px"}}>
@@ -221,18 +221,18 @@ export default function Home() {
           </p>
 
           <p className={aboutParasStyle}>
-          In 2021, &quotLullabies&quot by Prettyboyworldwyde, a song I produced and mixed, 
-          was featured on Spotify&aposs &quotNew Music Friday&quot and &quotanti pop&quot playlists, now 
+          In 2021, &quot;Lullabies&quot; by Prettyboyworldwyde, a song I produced and mixed, 
+          was featured on Spotify&apos;s &quot;New Music Friday&quot; and &quot;anti pop&quot; playlists, now 
           topping 426k streams from a previous listener base of under 10,000. Another 
-          song of ours,&quotKnow You&aposre Different,&quot was also featured as the first track of 
-          over 50 others on Spotify&aposs &quotFresh Finds&quot editorial playlist. &quotUnimpressed,&quot 
-          another PBW release, was featured on &quotanti pop&quot as well and now holds near 230k streams. 
+          song of ours,&quot;Know You&apos;re Different,&quot; was also featured as the first track of 
+          over 50 others on Spotify&apos;s &quot;Fresh Finds&quot; editorial playlist. &quot;Unimpressed,&quot; 
+          another PBW release, was featured on &quot;anti pop&quot; as well and now holds near 230k streams. 
           </p>
           </div>
 
           <div className="about-column">
             <p className={aboutParasStyle}>
-            At Brown, I&aposm a co-founder of the Brown Organization of Producers and Songwriters (BOPS), 
+            At Brown, I&apos;m a co-founder of the Brown Organization of Producers and Songwriters (BOPS), 
             an executive board member for Tunes for Change, a Brown organization that hosts charitable 
             benefit concerts, and the President of the Brown Music Cooperative, which organizes band 
             rehearsal spaces on campus. In 2021, I was a recipient of the Brown Department of 
@@ -242,7 +242,7 @@ export default function Home() {
             <p className={aboutParasStyle}>
             In summer 2021, I mixed a classical/jazz fusion album written by Ben Beckman, a composer 
             who has had pieces played by the LA Philharmonic and the National Youth Orchestra of the 
-            United States of America on the BBC Proms. &quotVOYAGE&quot released in October 2021.
+            United States of America on the BBC Proms. &quot;VOYAGE&quot; released in October 2021.
             </p>
 
             <p className={aboutParasStyle}>
@@ -253,7 +253,7 @@ export default function Home() {
             </p>
 
             <p className={aboutParasStyle}>
-            I&aposm available for more projects! Feel free to message me on Instagram or email me at <a href="mailto:jackbriley@me.com"><u>jackbriley@me.com</u>.</a>
+            I&apos;m available for more projects! Feel free to message me on Instagram or email me at <a href="mailto:jackbriley@me.com"><u>jackbriley@me.com</u>.</a>
             </p>
             </div>
           </div>
