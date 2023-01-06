@@ -191,7 +191,7 @@ export default function Home() {
         )} */}
 
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-5xl text-bold">About Me</h1>
+          <h1 className="text-3xl text-bold mb-5">About Me</h1>
           
           <div id="about-paras">
             <div className="about-column">
@@ -201,11 +201,11 @@ export default function Home() {
             and I focus on production in pop, folk, r&b, rap, and indie rock.
           </p>
 
-          <p className={aboutParasStyle}>
+          <p className={aboutParasStyle} style={{"marginBottom" : "11px"}}>
           Here&apos;s what I&apos;ve been up to in the past year:
           </p>
 
-          <ul className="list-disc" style={{"marginLeft" : "50px"}}>
+          <ul className="list-disc" style={{"marginLeft" : "40px"}}>
             {aboutBullets.map(bullet => 
               <li key={bullet} className="text-med mb-1 text-stone-300">{bullet}</li>)}
           </ul>

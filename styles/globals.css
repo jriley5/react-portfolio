@@ -151,9 +151,11 @@ canvas {
 #about-paras {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .about-column {
   width: 30vw;
+  min-width: 450px;
   margin: 0;
 }
