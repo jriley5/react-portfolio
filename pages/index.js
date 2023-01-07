@@ -200,7 +200,7 @@ export default function Home() {
             I&apos;m a music producer, audio engineer, songwriter, drummer and bassist from Los Angeles, 
             and I focus on production in pop, folk, r&b, rap, and indie rock. I&apos;ve put out over 45 songs with 15 
             different artists which total over 4.3 million streams, and my productions have been placed on Spotify&apos;s 
-            New Music Friday, Fresh Finds, and 12 other editorial playlists with no management.
+            New Music Friday, Fresh Finds, and 12 other editorial playlists without management.
           </p>
 
           <p className={aboutParasStyle} style={{"marginBottom" : "11px"}}>
