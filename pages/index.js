@@ -97,8 +97,8 @@ export default function Home() {
       </div>
       
 
-      {/* <div className="gradient-circle"></div>
-      <div className="gradient-circle-bottom"></div> */}
+      <div className="gradient-circle"></div>
+      {/* <div className="gradient-circle-bottom"></div> */}
 
       <div className="container mx-auto">
 

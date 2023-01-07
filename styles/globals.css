@@ -20,7 +20,7 @@ body {
 }
 
 .gradient-circle {
-  position: absolute;
+  position: sticky;
   pointer-events: none;
   z-index: 100;
   top: -30px;
@@ -30,8 +30,8 @@ body {
   filter: blur(40px);
   background: radial-gradient(
     circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 41, 0.9) 100%
   );
 }
 .gradient-circle-bottom {

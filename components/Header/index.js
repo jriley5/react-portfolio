@@ -148,6 +148,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, handleContactScroll, isBl
             {/* <Button onClick={() => window.open("mailto:jackbriley@me.com")}>
               Contact
             </Button> */}
+
             {/* {mounted && theme && data.darkMode && (
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
