@@ -198,7 +198,9 @@ export default function Home() {
             <p className={aboutParasStyle}>
             Hi! I&apos;m Jack Riley, a senior at Brown University studying Music and Computer Science.  
             I&apos;m a music producer, audio engineer, songwriter, drummer and bassist from Los Angeles, 
-            and I focus on production in pop, folk, r&b, rap, and indie rock.
+            and I focus on production in pop, folk, r&b, rap, and indie rock. I&apos;ve put out over 45 songs with 15 
+            different artists which total over 4.3 million streams, and my productions have been placed on Spotify&apos;s 
+            New Music Friday, Fresh Finds, and 12 other editorial playlists with no management.
           </p>
 
           <p className={aboutParasStyle} style={{"marginBottom" : "11px"}}>
@@ -220,17 +222,22 @@ export default function Home() {
 
           </p>
 
-          <p className={aboutParasStyle}>
-          In 2021, &quot;Lullabies&quot; by Prettyboyworldwyde, a song I produced and mixed, 
-          was featured on Spotify&apos;s &quot;New Music Friday&quot; and &quot;anti pop&quot; playlists, now 
-          topping 426k streams from a previous listener base of under 10,000. Another 
-          song of ours,&quot;Know You&apos;re Different,&quot; was also featured as the first track of 
-          over 50 others on Spotify&apos;s &quot;Fresh Finds&quot; editorial playlist. &quot;Unimpressed,&quot; 
-          another PBW release, was featured on &quot;anti pop&quot; as well and now holds near 230k streams. 
-          </p>
+
           </div>
 
+          
+
           <div className="about-column">
+
+            <p className={aboutParasStyle}>
+            In 2021, &quot;Lullabies&quot; by Prettyboyworldwyde, a song I produced and mixed, 
+            was featured on Spotify&apos;s &quot;New Music Friday&quot; and &quot;anti pop&quot; playlists, now 
+            topping 426k streams from a previous listener base of under 10,000. Another 
+            song of ours,&quot;Know You&apos;re Different,&quot; was also featured as the first track of 
+            over 50 others on Spotify&apos;s &quot;Fresh Finds&quot; editorial playlist. &quot;Unimpressed,&quot; 
+            another PBW release, was featured on &quot;anti pop&quot; as well and now holds near 230k streams. 
+            </p>
+
             <p className={aboutParasStyle}>
             At Brown, I&apos;m a co-founder of the Brown Organization of Producers and Songwriters (BOPS), 
             an executive board member for Tunes for Change, a Brown organization that hosts charitable 
