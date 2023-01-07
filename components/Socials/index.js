@@ -19,7 +19,7 @@ const Socials = ({ className }) => {
     <div className={`${className} flex flex-wrap mob:flex-nowrap link`}>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-      <a href="https://instagram.com/jackrileymusic" target="_blank"  rel="noreferrer" className="fa fa-instagram"></a>
+      <a href="https://instagram.com/jackrileey" target="_blank"  rel="noreferrer" className="fa fa-instagram"></a>
       <a href="https://www.linkedin.com/in/jack-riley-aa2ba3178/"  target="_blank"  rel="noreferrer" className="fa fa-linkedin"></a>
 
       {/* {yourData.socials.map((social, index) => (
