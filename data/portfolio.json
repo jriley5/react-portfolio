@@ -23,13 +23,13 @@
     "projects": [
         {
             "id": "1",
-            "title": "Game Theory",
+            "title": "Angela",
             "artist": "Chance Emerson",
             "credits": [
                 "production",
                 "mix"
             ],
-            "spotifyURL": "https://open.spotify.com/track/4GEmZTtTXA0bZahY7rA05h?si=33a5c700c3434a8a",
+            "spotifyURL": "https://open.spotify.com/track/5o6PE3d25oQ6tAsUKUkCPK?si=21ffb430a2aa4a4b",
             "playlistURLs": []
         },
         {
@@ -71,6 +71,7 @@
             ],
             "spotifyURL": "https://open.spotify.com/track/2zFmInJW8nn2O8hJRpgt0O?si=40c3b7d394f24eff",
             "playlistURLs": [
+                "https://open.spotify.com/playlist/37i9dQZF1DWWjGdmeTyeJ6?si=b5cdaad5ce984598",
                 "https://open.spotify.com/playlist/37i9dQZF1DX1aTyQ3Z9nTc",
                 "https://open.spotify.com/playlist/37i9dQZF1DXbTop77dnX35?si=519d15ffe3414855"
             ]
@@ -98,6 +99,17 @@
             ],
             "playlistURLs": [],
             "spotifyURL": "https://open.spotify.com/track/32MJWgGagVzCGmXC85jzWD?si=eedbeb3e9a4b4b35"
+        },
+        {
+            "id": "6",
+            "title": "Game Theory",
+            "artist": "Chance Emerson",
+            "credits": [
+                "production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/4GEmZTtTXA0bZahY7rA05h?si=33a5c700c3434a8a",
+            "playlistURLs": []
         },
         {
             "id": "7",
