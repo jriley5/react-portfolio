@@ -16,7 +16,7 @@ const Footer = ({}) => {
 
             <div style={{"display":"flex"}}>
             <Socials className="mt-5 mb-24 mr-5"/>
-            <p className="mt-4 ml-2">jackbriley@me.com</p>
+            <p className="mt-6 ml-2">jackbriley@me.com</p>
             </div>
 
           </div>
