@@ -11,7 +11,7 @@ const ServiceCard = ({ name, description, link }) => {
   return (
     <div
       className={`w-full p-2 mob:p-4 rounded-lg transition-all ease-out duration-300 ${
-        mounted && theme === "dark" ? "hover:bg-stone-800" : "hover:bg-slate-50"
+        mounted && theme === "dark" ? "hover:bg-slate-800" : "hover:bg-stone-500"
       } hover:scale-105 link`}
     >
 

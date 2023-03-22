@@ -272,8 +272,8 @@ export default function Home() {
           </div>
 
 
-          {/* <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-4xl text-bold">Session Walkthroughs</h1>
+          <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
+          <h1 className="tablet:m-10 text-4xl text-bold">Press</h1>
           <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard
@@ -284,7 +284,7 @@ export default function Home() {
               />
             ))}
           </div>
-        </div> */}
+        </div>
           
           
 

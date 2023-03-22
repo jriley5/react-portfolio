@@ -355,21 +355,9 @@
     "services": [
         {
             "id": "1",
-            "title": "Best Behavior - aloe.401",
-            "description": "Full session breakdown via YouTube",
-            "link": "https://www.youtube.com/watch?v=Isj55zeGGs8"
-        },
-        {
-            "id": "2",
-            "title": "miss u on my phone - Luke Markinson",
-            "description": "Full session breakdown via YouTube",
-            "link": "https://www.youtube.com/watch?v=4Slc9TmnHgU"
-        },
-        {
-            "id": "3",
-            "title": "St. Someone - Chance Emerson",
-            "description": "Full session breakdown via YouTube",
-            "link": "https://www.youtube.com/watch?v=4Slc9TmnHgU"
+            "title": "The Brown Daily Herald",
+            "description": "'Jack of all trades: Riley '23 makes waves in the campus music scene'",
+            "link": "https://www.browndailyherald.com/article/2023/03/jack-of-all-trades-riley-23-makes-waves-in-the-campus-music-scene"
         }
     ],
     "about": {
