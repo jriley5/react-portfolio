@@ -24,8 +24,9 @@ body {
   pointer-events: none;
   z-index: 100;
   top: -30px;
-  height: 40px;
+
   width: 100vw;
+  /* height: 40px; */
   opacity: 0.5;
   filter: blur(40px);
   background: radial-gradient(

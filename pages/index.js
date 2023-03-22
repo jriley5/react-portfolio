@@ -296,6 +296,8 @@ export default function Home() {
           )} */}
 
           {/* <Button type={"primary"} onClick={()=>setReadMoreAbout(!readMoreAbout)}>{(readMoreAbout? "read less" : "read more" )}</Button> */}
+
+          
         </div>
         <Footer refs={contactRef}/>
       </div>

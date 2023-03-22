@@ -44,22 +44,24 @@
             "playlistURLs": [
                 "https://open.spotify.com/playlist/37i9dQZF1DX4xuWVBs4FgJ?si=028d37c300354512",
                 "https://open.spotify.com/playlist/37i9dQZF1DXdbTERrLjYkP?si=8157bc34a8114b3c",
-                "https://open.spotify.com/playlist/37i9dQZF1DX6tTW0xDxScH"
+                "https://open.spotify.com/playlist/37i9dQZF1DX6tTW0xDxScH",
+                "https://open.spotify.com/playlist/37i9dQZF1DX5IOhx43PGIa?si=098471cc83154bd4"
             ]
         },
         {
-            "id": "3",
-            "title": "Lullabies",
+            "id": "8",
+            "title": "Unimpressed",
             "artist": "Prettyboyworldwyde",
             "credits": [
                 "production",
+                "co-writing",
                 "mix"
             ],
-            "spotifyURL": "https://open.spotify.com/track/7fvAIIqAH1TzC5ohdv0w2m?si=7b51268db88a4260",
             "playlistURLs": [
-                "https://open.spotify.com/playlist/37i9dQZF1DX4JAvHpjipBk?si=55487b8a748a4a84",
-                "https://open.spotify.com/playlist/37i9dQZF1DWWqNV5cS50j6?si=7824baa62d4146d3"
-            ]
+                "https://open.spotify.com/playlist/37i9dQZF1DWWqNV5cS50j6?si=f6685df12dda47b6",
+                "https://open.spotify.com/playlist/37i9dQZF1DWWjGdmeTyeJ6?si=e1e564127d1e4646"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/1Hx0E0KVi3yRXzXU93G40z?si=2fc3c505a8284fcb"
         },
         {
             "id": "4",
@@ -74,6 +76,33 @@
                 "https://open.spotify.com/playlist/37i9dQZF1DWWjGdmeTyeJ6?si=b5cdaad5ce984598",
                 "https://open.spotify.com/playlist/37i9dQZF1DX1aTyQ3Z9nTc",
                 "https://open.spotify.com/playlist/37i9dQZF1DXbTop77dnX35?si=519d15ffe3414855"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Ecstasy",
+            "artist": "Chance Emerson",
+            "credits": [
+                "production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/0zScvDc4HORillCZS7K1q0?si=615bcd1cda4d402d",
+            "playlistURLs": [
+                "https://open.spotify.com/playlist/37i9dQZF1DX5IOhx43PGIa?si=7146b6c4de6d4f92"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Lullabies",
+            "artist": "Prettyboyworldwyde",
+            "credits": [
+                "production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/7fvAIIqAH1TzC5ohdv0w2m?si=7b51268db88a4260",
+            "playlistURLs": [
+                "https://open.spotify.com/playlist/37i9dQZF1DX4JAvHpjipBk?si=55487b8a748a4a84",
+                "https://open.spotify.com/playlist/37i9dQZF1DWWqNV5cS50j6?si=7824baa62d4146d3"
             ]
         },
         {
@@ -97,7 +126,10 @@
                 "co-writing",
                 "mix"
             ],
-            "playlistURLs": [],
+            "playlistURLs": [
+                "https://open.spotify.com/playlist/37i9dQZF1DXattPCMpISJh?si=f50cc51d3f8145c2"
+
+            ],
             "spotifyURL": "https://open.spotify.com/track/32MJWgGagVzCGmXC85jzWD?si=eedbeb3e9a4b4b35"
         },
         {
@@ -122,18 +154,6 @@
             "spotifyURL": "https://open.spotify.com/track/6IARWJwhw6k1TM1V5LcfqO?si=465e6821e96d458b"
         },
         {
-            "id": "8",
-            "title": "Unimpressed",
-            "artist": "Prettyboyworldwyde",
-            "credits": [
-                "production",
-                "co-writing",
-                "mix"
-            ],
-            "playlistURLs": [],
-            "spotifyURL": "https://open.spotify.com/track/1Hx0E0KVi3yRXzXU93G40z?si=2fc3c505a8284fcb"
-        },
-        {
             "id": "9",
             "title": "St. Someone",
             "artist": "Chance Emerson",
@@ -145,6 +165,17 @@
             "spotifyURL": "https://open.spotify.com/track/151SVgVxyrYa60PaqecHut?si=da5f1693805e41d9"
         },
         {
+            "id": "3",
+            "title": "A Few More Days",
+            "artist": "Julien Deculus",
+            "credits": [
+                "co-production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/3bRtFI46v4VEGkuVxzX6h3?si=64884aa8af5f49a2",
+            "playlistURLs": []
+        },
+        {
             "id": "10",
             "title": "Can We Go?",
             "artist": "aloe.401",
@@ -152,6 +183,9 @@
                 "co-production",
                 "co-writing",
                 "mix"
+            ],
+            "playlistURLs" : [
+                "https://open.spotify.com/playlist/37i9dQZF1DWZE7SOCgQyNd?si=e21e87efcb294283"
             ],
             "spotifyURL": "https://open.spotify.com/track/2J0LpxQFYosA0oqFbmmZsp?si=51d36e4dec3d4306"
         },
@@ -199,6 +233,27 @@
             ],
             "spotifyURL": "https://open.spotify.com/track/3DwgJS4Y8DLpGq3phgj03Z?si=8344a402d76a42f7"
         },
+        {
+            "id": "14",
+            "title": "Deleted",
+            "artist": "Prettyboyworldwyde",
+            "credits": [
+                "production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/4kU0W8ZOJddo1awW8IdAzR?si=ac0f6ea7f27f45e1"
+        },
+        {
+            "id": "14",
+            "title": "Break it Off",
+            "artist": "Prettyboyworldwyde",
+            "credits": [
+                "production",
+                "mix"
+            ],
+            "spotifyURL": "https://open.spotify.com/track/2aQOeshZw3ImKbAFN8FLbF?si=d80c6511a7ba4ac7"
+        },
+        
         {
             "id": "15",
             "title": "Dizzy",
