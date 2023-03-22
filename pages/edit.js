@@ -12,7 +12,8 @@ const Edit = () => {
   // states
   const [data, setData] = useState(yourData);
   const [currentTabs, setCurrentTabs] = useState("HEADER");
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
+  const {theme} = 'dark'
 
   const saveData = () => {
     if (process.env.NODE_ENV === "development") {

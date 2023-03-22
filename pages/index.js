@@ -18,6 +18,7 @@ import Image from 'next/image'
 
 // Local Data
 import data from "../data/portfolio.json";
+import { useTheme } from "styled-components";
 
 
 // thrash animation
@@ -44,10 +45,16 @@ export default function Home() {
   // State
   const [readMoreWorkCards, setReadMoreWorkCards] = useState(false);
   const [readMoreAbout, setReadMoreAbout] = useState(false);
+  const theme = useTheme();
 
   let filteredWorkJSON = (readMoreWorkCards? data.projects : data.projects.slice(0,4));
   let filteredAboutParas = (readMoreAbout? data.aboutpara : [data.about.aboutpara[0], data.about.aboutpara[1]]);
-  let aboutParasStyle = "tablet:m-10 mt-2 text-lg text-stone-300	";
+  let aboutParasStyle = "tablet:m-10 mt-2 text-lg text-stone-500";
+
+
+  let aboutBulletsStyle =  "text-stone-500";
+  
+
   let aboutBullets = data.about.bullets;
 
   const profImageSource = 'https://i.imgur.com/vWM6rjk.jpg'
@@ -207,9 +214,9 @@ export default function Home() {
           Here&apos;s what I&apos;ve been up to in the past year:
           </p>
 
-          <ul className="list-disc" style={{"marginLeft" : "40px"}}>
+          <ul style={{"marginLeft" : "40px"}}>
             {aboutBullets.map(bullet => 
-              <li key={bullet} className="text-med mb-1 text-stone-300">{bullet}</li>)}
+              <li key={bullet} className="text-med mb-1 text-stone-500">{"- " + bullet}</li>)}
           </ul>
 
           <p className={aboutParasStyle}>
@@ -219,7 +226,6 @@ export default function Home() {
           Prettyboyworldwyde,  Jackson Jones, and Gus Benson. FLORA has collected 
           over 850k streams and been featured on 7+ Spotify editorial playlists 
           as of December 2022. ​
-
           </p>
 
 
@@ -260,7 +266,7 @@ export default function Home() {
             </p>
 
             <p className={aboutParasStyle}>
-            I&apos;m available for more projects! Feel free to message me on Instagram or email me at <a href="mailto:jackbriley@me.com"><u>jackbriley@me.com</u>.</a>
+            I&apos;m available for more projects! Feel free to email me at <a href="mailto:jackbriley@me.com"><u>jackbriley@me.com</u> or message me on Instagram. </a>
             </p>
             </div>
           </div>
