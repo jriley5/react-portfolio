@@ -37,12 +37,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, handleContactScroll, isBl
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
                   >
-                    {/* <img
+                    <img
                       className="h-6"
                       src={`/images/${
                         theme === "dark" ? "moon.svg" : "sun.svg"
                       }`}
-                    ></img> */}
+                    ></img>
                   </Button>
                 )}
 
