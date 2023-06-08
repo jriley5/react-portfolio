@@ -203,11 +203,10 @@ export default function Home() {
           <div id="about-paras">
             <div className="about-column">
             <p className={aboutParasStyle}>
-            Hi! I&apos;m Jack Riley, a senior at Brown University studying Music and Computer Science.  
-            I&apos;m a music producer, audio engineer, songwriter, drummer and bassist from Los Angeles, 
-            and I focus on production in pop, folk, r&b, rap, and indie rock. I&apos;ve put out over 45 songs with 15 
-            different artists which total over 4.3 million streams, and my productions have been placed on Spotify&apos;s 
-            New Music Friday, Fresh Finds, and 12 other editorial playlists without management.
+            Hi! I&apos;m Jack Riley, music producer, audio engineer, songwriter, drummer, guitarist and bassist based in NYC.  
+            I focus on production in pop, folk, r&b, rap, and indie rock. I&apos;ve put out over 87 songs with over 20 
+            different artists which total over 4.3 million streams. My work has been featured on Spotify&apos;s 
+            New Music Friday, Fresh Finds, and 14 other editorial playlists, all without management. 
           </p>
 
           <p className={aboutParasStyle} style={{"marginBottom" : "11px"}}>
@@ -262,7 +261,7 @@ export default function Home() {
             I also love to teach — I designed and co-taught a series of remote music production 
             workshops for high schoolers at Curious Cardinals and REACH Academy with Chance Emerson 
             throughout summer 2021. I currently work at Curious Cardinals as a music production and 
-            coding instructor, teaching 7 students weekly. 
+            coding instructor, teaching 4 students weekly. 
             </p>
 
             <p className={aboutParasStyle}>
