@@ -203,7 +203,7 @@ export default function Home() {
           <div id="about-paras">
             <div className="about-column">
             <p className={aboutParasStyle}>
-            Hi! I&apos;m Jack Riley, music producer, audio engineer, songwriter, drummer, guitarist and bassist based in NYC.  
+            Hi! I&apos;m Jack Riley — a music producer, audio engineer, songwriter, drummer, guitarist and bassist based in NYC.  
             I focus on production in pop, folk, r&b, rap, and indie rock. I&apos;ve put out over 87 songs with over 20 
             different artists which total over 4.3 million streams. My work has been featured on Spotify&apos;s 
             New Music Friday, Fresh Finds, and 14 other editorial playlists, all without management. 
