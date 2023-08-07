@@ -203,7 +203,7 @@ export default function Home() {
           <div id="about-paras">
             <div className="about-column">
             <p className={aboutParasStyle}>
-            Hi! I&apos;m Jack Riley — a music producer, audio engineer, songwriter, drummer, guitarist and bassist based in NYC.  
+            Hi! I&apos;m Jack. I'm a music producer, audio engineer, songwriter, drummer, guitarist and bassist based in NYC.  
             I focus on production in pop, folk, r&b, rap, and indie rock. I&apos;ve put out over 87 songs with over 20 
             different artists which total over 4.3 million streams. My work has been featured on Spotify&apos;s 
             New Music Friday, Fresh Finds, and 14 other editorial playlists, all without management. 
@@ -243,29 +243,28 @@ export default function Home() {
             another PBW release, was featured on &quot;anti pop&quot; as well and now holds near 230k streams. 
             </p>
 
-            <p className={aboutParasStyle}>
+            {/* <p className={aboutParasStyle}>
             At Brown, I&apos;m a co-founder of the Brown Organization of Producers and Songwriters (BOPS), 
             an executive board member for Tunes for Change, a Brown organization that hosts charitable 
             benefit concerts, and the President of the Brown Music Cooperative, which organizes band 
             rehearsal spaces on campus. In 2021, I was a recipient of the Brown Department of 
             Music Margery MacColl Award for outstanding musicianship. 
-            </p>
+            </p> */}
 
-            <p className={aboutParasStyle}>
+            {/* <p className={aboutParasStyle}>
             In summer 2021, I mixed a classical/jazz fusion album written by Ben Beckman, a composer 
             who has had pieces played by the LA Philharmonic and the National Youth Orchestra of the 
             United States of America on the BBC Proms. &quot;VOYAGE&quot; released in October 2021.
-            </p>
+            </p> */}
 
-            <p className={aboutParasStyle}>
+            {/* <p className={aboutParasStyle}>
             I also love to teach — I designed and co-taught a series of remote music production 
-            workshops for high schoolers at Curious Cardinals and REACH Academy with Chance Emerson 
-            throughout summer 2021. I currently work at Curious Cardinals as a music production and 
-            coding instructor, teaching 4 students weekly. 
-            </p>
+            workshops for high schoolers at Curious Cardinals and REACH Academy throughout summer 2021. 
+            I formerly taught 9 students at Curious Cardinals 
+            </p> */}
 
             <p className={aboutParasStyle}>
-            I&apos;m available for more projects! Feel free to email me at <a href="mailto:jackbriley@me.com"><u>jackbriley@me.com</u> or message me on Instagram. </a>
+            I&apos;m available for projects! You can reach me at <a href="mailto:jackbriley@me.com"><u>jackbriley@me.com</u>.</a>
             </p>
             </div>
           </div>
